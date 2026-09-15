@@ -11,3 +11,4 @@ The performance test must follow these requirements:
     *  10 times, using file sizes of 1MB, 10MB, 100MB, 1GB, and 10GB.
     * Using 1, 5, and 10 parallel requests.
   * The results must be reported in CSV format. 
+  * HTTP, HTTPS and xrootd protocol must be used
