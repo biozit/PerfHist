@@ -1,1 +1,14 @@
 Our new Performance History Project tracks metrics across multiple systems to ensure peak stability. By archiving real-time data and historical trends, we identify bottlenecks before they scale. It’s a unified dashboard designed for cross-system optimization and long-term reliability.
+
+
+The performance test must follow these requirements:
+
+  * The host and client must have:
+    * 4 cores using a server-type processor with a minimum clock speed of 2.5 GHz.
+    * 4 GB of RAM per core.
+    * Network of 10GB/s
+  * The tests must be performed using:
+    *  10 times, using file sizes of 1MB, 10MB, 100MB, 1GB, and 10GB.
+    * Using 1, 5, and 10 parallel requests.
+  * The results must be reported in CSV format. 
+* 
