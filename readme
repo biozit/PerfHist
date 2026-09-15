@@ -6,9 +6,8 @@ The performance test must follow these requirements:
   * The host and client must have:
     * 4 cores using a server-type processor with a minimum clock speed of 2.5 GHz.
     * 4 GB of RAM per core.
-    * Network of 10GB/s
+    * Network of 10GB/s - max RTT of 2
   * The tests must be performed using:
     *  10 times, using file sizes of 1MB, 10MB, 100MB, 1GB, and 10GB.
     * Using 1, 5, and 10 parallel requests.
   * The results must be reported in CSV format. 
-* 
