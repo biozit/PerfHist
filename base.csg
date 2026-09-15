@@ -1,0 +1,29 @@
+# ====================================================================
+# Basic Multi-Protocol XRootD Configuration (http, https, xrootd)
+# ====================================================================
+
+# Global server setup
+all.role server
+all.export /data/files nodel
+
+# Port Definitions
+# Standard XRootD port
+xrd.port 1094
+
+# Multi-protocol configuration
+xrd.protocol HTTP:80 libXrdHttp.so
+xrd.protocol HTTPS:443 libXrdHttp.so
+
+# --------------------------------------------------------------------
+# HTTP / HTTPS Plugin Setup
+# --------------------------------------------------------------------
+http.cadir /etc/grid-security/certificates
+http.cert /etc/grid-security/hostcert.pem
+http.key  /etc/grid-security/hostkey.pem
+
+# TLS and Security configuration
+# Note: For non-authenticated public HTTP/HTTPS testing, unsecure mode is enabled
+http.secxtra unsecure
+
+# File access permissions (Read-only setup)
+ofs.authorize false
